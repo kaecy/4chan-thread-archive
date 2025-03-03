@@ -1,0 +1,16 @@
+[project]
+name = "fourchan-archive"
+version = "0.0.1"
+authors = [
+  { name="Eris"},
+]
+description = "A simple utility for making 4chan archives."
+readme = "README.md"
+requires-python = ">=3.13"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+4chan_thread_archive = "fourchan_archive.scripts.archive:main"

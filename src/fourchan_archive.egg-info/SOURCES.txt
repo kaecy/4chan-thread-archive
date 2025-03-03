@@ -1,0 +1,9 @@
+LICENSE.md
+README.md
+pyproject.toml
+src/fourchan_archive.egg-info/PKG-INFO
+src/fourchan_archive.egg-info/SOURCES.txt
+src/fourchan_archive.egg-info/dependency_links.txt
+src/fourchan_archive.egg-info/entry_points.txt
+src/fourchan_archive.egg-info/top_level.txt
+src/fourchan_archive/scripts/archive.py

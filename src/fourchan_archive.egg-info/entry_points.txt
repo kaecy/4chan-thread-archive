@@ -1,0 +1,2 @@
+[console_scripts]
+4chan_thread_archive = fourchan_archive.scripts.archive:main
