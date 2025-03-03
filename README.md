@@ -1,3 +1,56 @@
 # 4Chan Archive
 
 Command line utility for making archives of 4chan threads.
+
+# Install and Use
+To install you should run this command: `pip install git+https://github.com/kaecy/4chan-thread-archive`
+
+This command installs the `4chan_thread_archive` command.
+
+
+You can use it like this:
+```terminal
+CMD> 4chan_thread_archive https://boards.4chan.org/g/thread/104564486
+```
+
+Output of this command might be:
+```output
+C:\USERS\KAECY\DESKTOP\ARCHIVE
+│   4chan_archive.md
+│   g-104538426.json
+│
+└───104538426
+        1740775509915344.gif
+        1740776973424429.png
+        1740779765219202.png
+        1740788583272380.jpg
+        1740792220753495.gif
+        1740794798183558.png
+        1740816676848213.jpg
+        1740837503345019.png
+        1740837671794722.png
+        1740838322231522.png
+        1740863855376765.jpg
+        1740877276036268.jpg
+        1740884470385716.png
+        1740908610620831.png
+        1740912800623499.png
+        1740916344435318.gif
+        1740928552625726.jpg
+        1740928729919557.png
+        1740932932750590.png
+        1740933228506375.jpg
+        1740933539909722.jpg
+        1740934180910865.png
+        1740934242739373.png
+        1740947814907885.png
+        1740952209324021.gif
+        1740954854373117.png
+        1740956734000179.png
+        1740957209024984.png
+        1740968114783416.jpg
+        1740975565606174.jpg
+        1740989839279731.jpg
+        1740996561455942.png
+```
+That's your archive.
