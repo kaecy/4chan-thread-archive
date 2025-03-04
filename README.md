@@ -2,11 +2,20 @@
 
 Command line utility for making archives of 4chan threads.
 
-# Install and Use
-To install you should run this command: `pip install git+https://github.com/kaecy/4chan-thread-archive`
+# About
+Quick and easy way to save 4chan threads with a tiny script.
 
-This command installs the `4chan_thread_archive` command.
+# Install, Use and Uninstall
+Requirements (you don't need these versions, should work with any):
+- python-3.13
+- requests (gets installed automatically)
 
+## Install
+Did you know you can install git-repos as python packages?
+
+Run this command: `pip install git+https://github.com/kaecy/4chan-thread-archive`
+
+Using that command installs the fourchan_archive package and it contains the `4chan_thread_archive` command.
 
 You can use it like this:
 ```terminal
@@ -54,3 +63,10 @@ C:\USERS\KAECY\DESKTOP\ARCHIVE
         1740996561455942.png
 ```
 That's your archive.
+
+Keep the `g-104538426.json` file. You can use it to format the document using different transformation methods which this project can't (yet). There may be other projects that can. Maybe, you can help.
+
+## Uninstall
+To uninstall: `pip uninstall fourchan_archive`.
+
+You can uninstall **requests** too, if you aren't going to use it.
