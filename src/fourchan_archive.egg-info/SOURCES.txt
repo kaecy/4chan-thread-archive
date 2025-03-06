@@ -1,6 +1,8 @@
 LICENSE.md
 README.md
 pyproject.toml
+src/fourchan/errors.py
+src/fourchan/url.py
 src/fourchan_archive.egg-info/PKG-INFO
 src/fourchan_archive.egg-info/SOURCES.txt
 src/fourchan_archive.egg-info/dependency_links.txt

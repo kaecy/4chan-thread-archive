@@ -5,6 +5,8 @@ Command line utility for making archives of 4chan threads.
 # About
 Quick and easy way to save 4chan threads with a tiny script.
 
+This package uses the official [4chan API](https://github.com/4chan/4chan-APi). You might want to check it it you're writing an archiving package like this.
+
 # Install, Use and Uninstall
 Requirements (you don't need these versions, should work with any):
 - python-3.13
@@ -24,11 +26,11 @@ CMD> 4chan_thread_archive https://boards.4chan.org/g/thread/104564486
 
 Output of this command might be:
 ```output
-C:\USERS\KAECY\DESKTOP\ARCHIVE
-│   4chan_archive.md
-│   g-104538426.json
+C:\USERS\KAECY\DESKTOP\104564486
+│   archive.md
+│   metadata.json
 │
-└───104538426
+└───media
         1740775509915344.gif
         1740776973424429.png
         1740779765219202.png
@@ -64,7 +66,7 @@ C:\USERS\KAECY\DESKTOP\ARCHIVE
 ```
 That's your archive.
 
-Keep the `g-104538426.json` file. You can use it to format the document using different transformation methods which this project can't (yet). There may be other projects that can. Maybe, you can help.
+Keep the `metadata.json` file. You can use it to format the document using different transformation methods which this project can't (yet). There may be other projects that can. Maybe, you can help.
 
 ## Uninstall
 To uninstall: `pip uninstall fourchan_archive`.
