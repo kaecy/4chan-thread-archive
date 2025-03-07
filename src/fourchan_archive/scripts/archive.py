@@ -5,6 +5,7 @@ import requests
 
 import fourchan.url
 import fourchan.errors
+from minimal import Progress
 
 def fetch_4chan_thread_data(url):
     """Fetch the thread data from 4chan."""
@@ -44,7 +45,9 @@ def fetch_4chan_thread_data(url):
     if not os.path.exists(images_dir):
         os.mkdir(images_dir)
 
-    for post in posts:
+    print("Downloaing media...")
+    pg = Progress()
+    for index, post in enumerate(posts):
         if "filename" in post:
             filename = str(post['tim']) + post['ext']
             localfilename = os.path.join(images_dir, filename)
@@ -56,9 +59,11 @@ def fetch_4chan_thread_data(url):
                     with open(localfilename, "wb") as file:
                         for chunk in response.iter_content(1024):  # Download in chunks
                             file.write(chunk)
-            else:
-                print(f"File {filename} already exists.")
-    
+            
+            #else:
+            #    print(f"File {filename} already exists.")
+        pg.update((index + 1) / len(posts))
+
     return posts, None
 
 def generate_markdown(posts):
@@ -101,7 +106,7 @@ def main():
         markdown_content = generate_markdown(thread_data)
         
         save_to_file(markdown_content, thread_url.thread)
-        print(f"Markdown document generated: {thread_url.thread}\\4chan_archive.md")
+        print(f"Markdown document generated: {thread_url.thread}\\archive.md")
 
 if __name__ == "__main__":
     main()

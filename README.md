@@ -7,6 +7,10 @@ Quick and easy way to save 4chan threads with a tiny script.
 
 This package uses the official [4chan API](https://github.com/4chan/4chan-APi). You might want to check it if you're writing an archiving package like this.
 
+<img src="res/console.png" width="600">
+
+Clean and simple.
+
 # Install, Use and Uninstall
 Requirements (you don't need these versions, should work with any):
 - python-3.13
