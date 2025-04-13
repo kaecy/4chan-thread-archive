@@ -15,6 +15,7 @@ Clean and simple.
 Requirements (you don't need these versions, should work with any):
 - python-3.13
 - requests (gets installed automatically)
+- minimal-progress (gets installed automatically)
 
 ## Install
 Did you know you can install git-repos as python packages?
@@ -23,6 +24,7 @@ Run this command: `pip install git+https://github.com/kaecy/4chan-thread-archive
 
 Using that command installs the fourchan_archive package and it contains the `4chan_thread_archive` command.
 
+## Use
 You can use it like this:
 ```terminal
 CMD> 4chan_thread_archive https://boards.4chan.org/g/thread/104564486
@@ -75,4 +77,6 @@ Keep the `metadata.json` file. You can use it to format the document using diffe
 ## Uninstall
 To uninstall: `pip uninstall fourchan_archive`.
 
-You can uninstall **requests** too, if you aren't going to use it.
+You can uninstall these too:
+- requests
+- minimal-progress
